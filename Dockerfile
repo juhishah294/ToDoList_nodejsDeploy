@@ -1,12 +1,12 @@
-FROM node:16
+FROM node:18
 
-#COPY package*.json ./
+COPY package*.json ./
 
 WORKDIR /opt/server/backend-test
 
 COPY . .
 
-RUN rm -rf package*.json
+# RUN rm -rf package*.json
 RUN npm install mongoose
 RUN npm install express
 RUN npm install
