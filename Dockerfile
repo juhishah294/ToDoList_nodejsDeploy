@@ -7,7 +7,7 @@ WORKDIR /opt/server/backend-test
 COPY . .
 
 RUN rm -rf package*.json
-RUN npm install mongodb
+RUN npm install mongoose
 RUN npm install express
 RUN npm install
 EXPOSE 8080
