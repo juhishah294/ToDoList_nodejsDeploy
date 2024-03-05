@@ -8,6 +8,7 @@ COPY . .
 
 RUN rm -rf package*.json
 RUN npm install mongodb
+RUN npm install express
 RUN npm install
 EXPOSE 8080
 CMD [ "node", "index.js" ]
